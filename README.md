@@ -1,5 +1,5 @@
 Imagens do projeto:
 
-![image](https://github.com/user-attachments/assets/8d994834-3ee1-4558-947c-6e8bae83e3a3)
+![image](https://github.com/user-attachments/assets/894acb76-2754-4493-9556-6c1c927037a6)
 
 

@@ -7,6 +7,8 @@ paragrafo = document.getElementById('array_initial')
 
 paragrafo.textContent = numeros.join (', ')
 
+
+//função para adicionar novos elementos no array
 function adicionar() {
 
 
@@ -27,6 +29,7 @@ function adicionar() {
 
 }
 
+//função para calcular a média dos valores digitados pelo usuário
 function mediaAritmetica() {
 
     if (numeros.length === 0) {
@@ -38,5 +41,26 @@ function mediaAritmetica() {
     var media = soma/numeros.length
     document.getElementById('result_media').value = media.toFixed(2)
     console.log(media)
+    
+}
+
+//função para limpar os números do array e dos input
+function limpar() {
+
+    if (numeros.length === 0) {
+        alert ('Nenhuma nota foi adicionada.')
+        return
+    } 
+
+    while(numeros.length) {
+        numeros.pop()
+    }
+    media = ''
+    
+
+    console.log(numeros, media)
+
+    document.getElementById('array_initial').value = ''
+    document.getElementById('result_media').value = ''
     
 }

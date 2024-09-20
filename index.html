@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <style>
+
+        body {
+            background-color: rgb(248, 248, 248);
+        }
+
+        h1 {
+            padding: 50px 0 0 50px;       
+        }
+        
+        .num {
+            padding: 50px;
+        }
+        
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1 class="display-4">Cálculo de Média</h1>
+    
+        <div class="num">
+            <h4>Insira a nota do aluno para calcular a média:</h4>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Insira um número" aria-label="Insira um número" aria-describedby="button-addon2" id="entrada">
+                <button class="btn btn-outline-primary" type="button" id="button-addon2" onclick="adicionar()">Adicionar</button>
+            </div>
+
+            <hr>
+            <h4>A nota do aluno é: </h4>
+            <input id="array_initial" type="text" class="form-control" placeholder="0" disabled="disabled" />
+            <br>
+            <button class="btn btn-outline-primary" onclick="mediaAritmetica()">Calcular Média Aritmética</button>
+
+            <br><br>
+            <h4>A média do aluno é: </h4> 
+            <input id="result_media" type="text" class="form-control" placeholder="0" disabled="disabled" />
+        </div>
+    
+    <script src="script.js"> </script>
+    
+</body>
+
+</html>
